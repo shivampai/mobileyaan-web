@@ -90,4 +90,10 @@ function myKeyDown(e) {
     if(document.getElementById('drpdwn').value == 'Vertical Separator') {
         new_image('vertical Separator.svg');
     }
+    if(document.getElementById('drpdwn').value == 'Aerodynamical Parabolloid Cone') {
+        new_image('Capsule Module White.png');
+    }
+    if(document.getElementById('drpdwn').value == 'Aerodynamical Nose Cone') {
+        new_image('AERODYNAMIC NOSE CONE _ WHITE.png');
+    }
 }
