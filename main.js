@@ -6,18 +6,6 @@ block_img_height =100 ;
 var player_object = "" ;
 var block_object = "" ;
 
-function player_update() {
-    fabric.Image.fromURL("MOBILEYAAN LOGO 512x512.png" , function(IMG){
-        player_object = IMG ;
-        player_object.scaleToWidth(150);
-        player_object.scaleToHeight(150);
-        player_object.set({
-            top:player_y,
-            left:player_x
-        });
-        canvas.add(player_object) ;
-    });
-}
 function new_image(get_image) {
     fabric.Image.fromURL(get_image , function(IMG){
         block_object = IMG ;
@@ -68,8 +56,14 @@ function myKeyDown(e) {
     if(keypress == '51'){
         new_image('hawk.png'); 
     }
+    if(keypress == '86'){
+        new_image('vertical Separator.svg'); 
+    }
     if(keypress == '52'){
         new_image('Capsule Module White.png'); 
+    }
+    if(keypress == '53'){
+        new_image('side separator.svg'); 
     }
         if(keypress == '90'){
         canvas.remove(block_object); 
@@ -80,31 +74,20 @@ function myKeyDown(e) {
 }
 
 
-function up() {
-    if(player_y >= 0){
-        player_y = player_y - block_img_height;
-        canvas.remove(player_object);
-        player_update();
+    function drp() {
+    if(document.getElementById('drpdwn').value == 'Vikas Engine') {
+        new_image('hawk.png');
     }
-}
-function down() {
-    if(player_y <= 500){
-        player_y = player_y + block_img_height;
-        canvas.remove(player_object);
-        player_update();
+    if(document.getElementById('drpdwn').value == 'Cryogenic Fuel Tank (18 Ton)') {
+        new_image('fuel4.png');
     }
-}
-function left() {
-    if(player_x >= 0){
-        player_x = player_x - block_img_width;
-        canvas.remove(player_object);
-        player_update();
+    if(document.getElementById('drpdwn').value == 'Solid Fuel Tank (18 Ton)') {
+        new_image('fuel4.png');
     }
-}
-function right() {
-    if(player_x <= 800){
-        player_x = player_x + block_img_width;
-        canvas.remove(player_object);
-        player_update();
+    if(document.getElementById('drpdwn').value == 'Side Separator') {
+        new_image('side separator.svg');
+    }
+    if(document.getElementById('drpdwn').value == 'Vertical Separator') {
+        new_image('vertical Separator.svg');
     }
 }

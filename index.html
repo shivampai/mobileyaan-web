@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>C85</title>
+	<title>MobileYaan Web Builder</title>
+	<link rel="icon" href="MOBILEYAAN LOGO 512x512.png">
 
 <link rel="stylesheet" href="style.css">
 
@@ -15,14 +16,14 @@
 <body class="body_background">
 
 	<center>
-
-	<h2 class="btn-primary">MINECRAFT</h2>
-
-	<div id="head_info" class="btn-danger">
-		<h3>Current Width  = <span id="current-width">30</span></h3>
-		<h3>Current Height  = <span id="current-height">30</span></h3>
-	</div>
+		<span style="margin: 10px;"><select id="drpdwn"><optgroup label="Engines">
+			<option>Vikas Engine</option><optgroup label="Fuel Tanks">
+			<option>Cryogenic Fuel Tank (18 Ton)</option><option>Solid Fuel Tank (18 Ton)</option></optgroup><optgroup label="Separators">
+				<option>Side Separator</option><option>Vertical Separator</option>
+			</optgroup>
+		</optgroup></select><button onclick="drp()">Add</button></span>
 	<canvas id="myCanvas" width="1000" height="600"></canvas>
+	<iframe style="width: 100%;" height="455px" frameborder="0" src="shortcuts.html"></iframe>
 
 	</center>
 	<script src="main.js"></script>
