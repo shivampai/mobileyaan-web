@@ -75,7 +75,7 @@ function myKeyDown(e) {
 
 
     function drp() {
-    if(document.getElementById('drpdwn').value == 'Vikas Engine') {
+    if(document.getElementById('drpdwn').value == 'Hawk Engine') {
         new_image('hawk.png');
     }
     if(document.getElementById('drpdwn').value == 'Cryogenic Fuel Tank (18 Ton)') {
@@ -95,5 +95,11 @@ function myKeyDown(e) {
     }
     if(document.getElementById('drpdwn').value == 'Aerodynamical Nose Cone') {
         new_image('AERODYNAMIC NOSE CONE _ WHITE.png');
+    }
+    if(document.getElementById('drpdwn').value == 'Vikas Engine') {
+        new_image('engine.png');
+    }
+    if(document.getElementById('drpdwn').value == 'Fairing (Curve)') {
+        new_image('fairing.png');
     }
 }
