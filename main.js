@@ -103,3 +103,6 @@ function myKeyDown(e) {
         new_image('fairing.png');
     }
 }
+download_img = function(el) { 
+    var image = canvas.toDataURL("image/png"); el.href = image; 
+};
