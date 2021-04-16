@@ -104,5 +104,11 @@ function myKeyDown(e) {
     }
 }
 download_img = function(el) { 
-    var image = canvas.toDataURL("image/png"); el.href = image; 
+    var rocketname = window.prompt("Rocket Name:");
+    document.getElementById("download").download = rocketname + ".jpg";
+    var image = canvas.toDataURL("image/jpg"); el.href = image; 
 };
+function addLOGO() {
+    new_image(document.getElementById("logoURL").value);
+    document.getElementById("logoURL").value = "";
+}
