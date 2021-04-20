@@ -56,7 +56,7 @@ function myKeyDown(e) {
     if(keypress == '51'){
         new_image('hawk.png'); 
     }
-    if(keypress == '86'){
+    if(keypress == ''){
         new_image('vertical Separator.svg'); 
     }
     if(keypress == '52'){
@@ -67,9 +67,6 @@ function myKeyDown(e) {
     }
         if(keypress == '90'){
         canvas.remove(block_object); 
-    }
-    if(keypress == '83'){
-         
     }
 }
 
