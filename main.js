@@ -109,3 +109,18 @@ function addLOGO() {
     new_image(document.getElementById("logoURL").value);
     document.getElementById("logoURL").value = "";
 }
+var elem = document.documentElement;
+
+function openFullScreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { 
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) {
+    elem.msRequestFullscreen();
+  }
+}
+function addCustomImage(img_link){
+  var xyzz = URL.createObjectURL(img_link);
+  new_image(xyzz);  
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MobileYaan Aluminium</title>
+	<link rel="icon" href="MOBILEYAAN LOGO 512x512.png">
+
+<link rel="stylesheet" href="style.css">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/mr_IN/sdk.js#xfbml=1&version=v11.0" nonce="8xJo8mau"></script>
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body onload="load()" class="body_background">
+
+	<center>
+    <div id="panel" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <td><img class="component-img" src="fuel4.png" title="Fuel Tank" onclick="new_image(this.src)"></td><hr>
+      <td><img width="50" class="component-img" src="side separator.svg" title="Side Separator" onclick="new_image(this.src)"></td><hr class="hr">
+      <td><img class="component-img" src="hawk.png" title="Hawk Engine" width="100" onclick="new_image(this.src)"></td><hr>
+       <td><img class="component-img" width="100" src="engine.png" title="Vikas Engine" onclick="new_image(this.src)"></td><hr>
+       <td><img class="component-img" width="100" src="vertical Separator.svg" title="Vertical Separator" onclick="new_image(this.src)"></td><hr>
+       <td><img class="component-img" width="100" src="Capsule Module White.png" title="Parabolloid Nose Cone" onclick="new_image(this.src)"></td><hr>
+       <td><img class="component-img" width="100" src="AERODYNAMIC NOSE CONE _ WHITE.png" title="Aerodynamical Nose Cone" onclick="new_image(this.src)"></td><hr>
+       <div id="customComponents" style="display:none;">
+         Custom Components Will Show up Here.
+       </div>
+      <button style="display:none;" onclick="addLOGO()">Add Custom Image</button>
+</div>
+		<h3 style="color:white">MobileYaan<span class="label label-default">Aluminium</span></h3>
+		&nbsp;&nbsp;&nbsp;&nbsp;  <!-- Button to Open the Modal -->
+  <button onclick="generateLink()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Download
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Download Rocket</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img width="500" height="250" id="downloadedimg">
+          <input id="imglink" disabled class="form-control">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmobileyaan-web.shivampai.repl.co%2Fv2%2F&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <button class="btn btn-success">Generate Rocket Link</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="openNav()">Open Components</button></span>
+	<canvas id="myCanvas" width="1000" height="500"></canvas>
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>

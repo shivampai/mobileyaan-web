@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MobileYaan Copper</title>
+	<link rel="icon" href="/al/MOBILEYAAN LOGO 512x512.png">
+
+<link rel="stylesheet" href="style.css">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/mr_IN/sdk.js#xfbml=1&version=v11.0" nonce="8xJo8mau"></script>
+<script src="fabric.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<body onload="load()" class="body_background" >
+
+	<center>
+    <div id="panel-whole" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <div class="col-sm-6 col-md-6 col-lg-6 bg-white">
+      <td style="display:none;"><button class="panel-side-left" style="display:none;" width="100" onclick='hideAll() ; document.getElementById("flag-comp").style.display = "block";'>Logos And Flags</button><hr  style="display:none;"></td>
+      <td><button class="panel-side-left"width="100" onclick='hideAll() ; document.getElementById("basic-comp").style.display = "block";'>Basic Components</button></td><hr>
+      <td><button class="panel-side-left"width="100" onclick='hideAll() ; document.getElementById("ad-comp").style.display = "block";'>Aerodynamics</button></td><hr>
+      <td><button class="panel-side-left"width="100" onclick='hideAll() ; document.getElementById("man-comp").style.display = "block";'>Manned Mission</button></td><hr>
+      <td><button class="panel-side-left"width="100" onclick='hideAll() ; document.getElementById("eng-comp").style.display = "block";'>Engines</button></td><hr>
+       <td><button class="panel-side-left"width="100" onclick='hideAll() ; document.getElementById("elec-comp").style.display = "block";'>Electricity</button></td>
+  </div>
+   <div class="col-sm-6 col-md-6 col-lg-6 bg-white">
+     <section class="hidden-comp" id="flag-comp">
+           <td><img class="component-img" src="in.png" title="India Flag"width="100" onclick="new_image(this.src)"></td><hr>
+           <td><img class="component-img" src="in-emblem.png" title="Indian Emblem"width="100" onclick="new_image(this.src)"></td><hr>
+     </section>
+     <section class="hidden-comp" id="basic-comp">
+           <td><img class="component-img" src="/v3assets/fueltank.png" title="Cryogenic Fuel Tank" width="100" onclick="new_image(this.src)"></td><hr>
+           <td><img class="component-img" src="/v3assets/side-separator.png" title="Side Separator" width="100" onclick="new_image(this.src)"></td><hr>
+     </section>
+     <section class="hidden-comp" id="ad-comp"><td><img class="component-img" src="/v3assets/ad-nose-cone.png" title="Aerodynamical Nose Code" width="100" onclick="new_image(this.src)"></td><hr>
+     <td><img class="component-img" src="/v3assets/ad-paraboloid.png" title="Aerodynamical Paraboloid Code" width="100" onclick="new_image(this.src)"></td><hr>
+     
+     </section>
+     <section class="hidden-comp" id="man-comp">
+           <td><img class="component-img" src="/v3assets/fueltank.png" title="Liquid Fuel Tank" width="100" onclick="new_image(this.src)"></td><hr>
+           <td><img class="component-img" src="/v3assets/manned-capsule.png" title="Manned Capsule With 3 People" width="100" onclick="new_image(this.src)"></td><hr>
+     </section>
+     <section class="hidden-comp" id="eng-comp">
+           <td><img class="component-img" src="/al/hawk.png" title="Hawk Engine" width="100" onclick="new_image(this.src)"></td><hr><td><img class="component-img" src="/al/engine.png" title="Vikas Engine" width="100" onclick="new_image(this.src)"></td><hr>
+     </section>
+     <section class="hidden-comp" id="elec-comp">
+           <td><img class="component-img" src="/v3assets/solar-panel.png" title="Solar Panel" width="100" onclick="new_image(this.src)"></td>
+           <hr>
+     </section>
+     
+  </div>
+</div>
+		<h3>MobileYaan<span class="label label-warning">Copper</span></h3>&nbsp;&nbsp;&nbsp;&nbsp;  <!-- Button to Open the Modal -->
+  <button onclick="generateLink()" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Download
+  </button>
+
+  <!-- The Modal -->
+  <div class="modal" id="myModal"  unselectable="on"
+>
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Download Rocket</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <img width="500" height="250" id="downloadedimg">
+          <input id="imglink" class="form-control">
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+          <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fmobileyaan-web.shivampai.repl.co%2Fv2%2F&layout=button_count&size=large&width=88&height=28&appId" width="88" height="28" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button onclick="openFullScreen()" class="btn btn-success"><i class="fas fa-expand"></i>&nbsp;Fullscreen</button>
+</div><button class="btn btn-success" onclick="openNav()">Open Components</button>&nbsp;<button class="btn btn-primary" onclick="addText()">Add Text</button></span>
+	<canvas id="myCanvas" width="1000" height="500"></canvas>
+  <h1 class="fas fa-trash"></h1>
+	</center>
+	<script src="main.js"></script>
+</body>
+</html>
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;mobileyaan-web.shivampai.repl.co&#x2F;al&#x2F;MOBILEYAAN%20LOGO%20512x512.png"
+  intent="WELCOME"
+  chat-title="MobileYaan-Copper-Guide"
+  agent-id="b366c9cd-e888-422e-af3e-3253f1e300ec"
+  language-code="en"
+></df-messenger>
